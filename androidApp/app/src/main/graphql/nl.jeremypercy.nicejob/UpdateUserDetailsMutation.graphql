@@ -1,0 +1,11 @@
+mutation UpdateUserDetailsMutation($id: ID!, $name: String!, $lastname: String!, $address: String!, $zipcode: String!, $city: String!, $email: String!, $phonenumber: String!) {
+    updateUserDetails(id: $id, name: $name, lastname: $lastname, address: $address, zipcode: $zipcode, city: $city, email: $email, phonenumber: $phonenumber) {
+        name
+        lastName
+        address
+        zipcode
+        city
+        email
+        phoneNumber
+    }
+}

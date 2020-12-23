@@ -1,0 +1,8 @@
+mutation AddEducationMutation($school: String, $diploma: String, $periodefrom: String, $periodeto: String){
+    addEducation(school: $school, diploma: $diploma, periodefrom: $periodefrom, periodeto: $periodeto) {
+        school
+        diploma
+        periodeFrom
+        periodeTo
+    }
+}

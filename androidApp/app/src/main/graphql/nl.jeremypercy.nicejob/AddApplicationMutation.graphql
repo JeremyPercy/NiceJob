@@ -1,0 +1,11 @@
+mutation AddApplicationMutation($id: ID!) {
+    addApplication(vacancyId: $id) {
+        date
+        user {
+            id
+        }
+        vacancy {
+            id
+        }
+    }
+}

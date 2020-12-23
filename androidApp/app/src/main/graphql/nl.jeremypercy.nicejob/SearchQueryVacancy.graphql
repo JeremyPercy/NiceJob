@@ -1,0 +1,14 @@
+query SearchQueryVacancy($search: String!) {
+    searchQueryVacancy(search: $search) {
+      id
+      title
+      function
+      description
+      salary
+      company {
+        id
+        name
+        city
+        }
+     }
+}

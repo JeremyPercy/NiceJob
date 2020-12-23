@@ -1,0 +1,17 @@
+query GetUserDetailsQuery {
+    getUserDetails {
+        id
+        name
+        lastName
+        address
+        zipcode
+        city
+        email
+        phoneNumber
+        user {
+            id
+            username
+            email
+        }
+    }
+}

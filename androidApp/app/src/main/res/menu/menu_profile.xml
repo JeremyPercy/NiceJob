@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="nl.jeremypercy.nicejob.MainActivity">
+    <item
+        android:id="@+id/action_info"
+        android:orderInCategory="100"
+        android:title="Your info"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:iconTint="@color/colorWhite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_experience"
+        android:orderInCategory="100"
+        android:title="Experience"
+        android:icon="@drawable/ic_outline_work_outline_24px"
+        android:iconTint="@color/colorWhite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_education"
+        android:orderInCategory="100"
+        android:title="Education"
+        android:icon="@drawable/ic_outline_school_24px"
+        android:iconTint="@color/colorWhite"
+        android:iconTintMode="add"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/action_vacancies"
+    android:orderInCategory="100"
+    android:title="@string/vacancies"
+    android:icon="@drawable/ic_outline_description_24px"
+    android:iconTint="@color/colorWhite"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:iconTint="@color/colorWhite"
+        app:showAsAction="never" />
+</menu>

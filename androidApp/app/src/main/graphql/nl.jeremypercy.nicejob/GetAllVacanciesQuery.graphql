@@ -1,0 +1,14 @@
+query GetAllVacanciesQuery{
+  getAllVacancies {
+    id
+    title
+    function
+    description
+    salary
+    company {
+        id
+        name
+        city
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query GetAllUserApplications {
+    getAllUserApplications {
+        date
+        vacancy {
+            title
+            company {
+                name
+            }
+        }
+    }
+}

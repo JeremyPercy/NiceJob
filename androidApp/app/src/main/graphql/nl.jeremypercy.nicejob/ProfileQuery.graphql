@@ -1,0 +1,18 @@
+query ProfileQuery {
+    getUser{
+        username
+        email
+        education {
+            school
+            diploma
+            periodeFrom
+            periodeTo
+        }
+        experience {
+            companyName
+            experience
+            periodeFrom
+            periodeTo
+        }
+      }
+}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:layout_editor_absoluteY="25dp"
+    tools:context=".component.vacancy.VacancyPage"
+    tools:showIn="@layout/activity_vacancy_page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vacancyPageCardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardMaxElevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/lLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/titleVacancy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/descriptionCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_place_black_24dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="Tilburg"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/descriptionSalary"
+                    android:textSize="16sp"
+                    android:text="Salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_attach_money_black_24dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Function"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/descriptionVacancy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardMaxElevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewId"
+            app:layout_constraintVertical_bias="0.056">
+
+
+            <LinearLayout
+                android:id="@+id/cardLayoutCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/companyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_business_black_24dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="Title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Address"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/zipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zipcode"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/companyCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tilburg"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/companyPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="Phonenumber"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/companyEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="Email"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--<androidx.cardview.widget.CardView-->
+            <!--android:id="@+id/cardViewUser"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:elevation="5dp"-->
+            <!--android:padding="20dp"-->
+            <!--app:cardCornerRadius="10dp"-->
+            <!--app:cardMaxElevation="6dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.062"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/cardViewCompany"-->
+            <!--app:layout_constraintVertical_bias="0.056">-->
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/cardLayoutUser"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="20dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/userName"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawableStart="@drawable/ic_person_black_24dp"-->
+                    <!--android:drawablePadding="2dp"-->
+                    <!--android:drawableTint="@color/colorAccent"-->
+                    <!--android:text="Username"-->
+                    <!--android:textColor="@color/colorAccent"-->
+                    <!--android:textSize="24sp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/userEmail"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawableStart="@drawable/ic_email_black_24dp"-->
+                    <!--android:drawablePadding="2dp"-->
+                    <!--android:drawableTint="@color/colorAccent"-->
+                    <!--android:text="Email"-->
+                    <!--android:textColor="@color/colorAccent"-->
+                    <!--android:textSize="16sp" />-->
+            <!--</LinearLayout>-->
+        <!--</androidx.cardview.widget.CardView>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

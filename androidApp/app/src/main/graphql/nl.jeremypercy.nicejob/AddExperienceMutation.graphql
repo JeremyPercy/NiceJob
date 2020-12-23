@@ -1,0 +1,8 @@
+mutation AddExperienceMutation($companyname: String, $experience: String, $periodefrom: String, $periodeto: String){
+    addExperience(companyname: $companyname, experience: $experience, periodefrom: $periodefrom, periodeto: $periodeto) {
+        companyName
+        experience
+        periodeFrom
+        periodeTo
+    }
+}

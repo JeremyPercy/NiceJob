@@ -1,0 +1,20 @@
+query GetVacancyQuery($id: ID) {
+    getVacancy(id: $id) {
+    title
+        function
+        description
+        salary
+        company {
+          name
+          address
+          zipcode
+          city
+          email
+          phoneNumber
+          user{
+            username
+            email
+          }
+        }
+    }
+}
